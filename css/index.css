@@ -13,3 +13,73 @@ body {
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
+/*----------form---------*/
+
+form {
+    width: 50%;
+    float: right;
+    /* background-color: lightblue; */
+}
+
+label {
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group input {
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group input:hover {
+    background-color: cadetblue;
+}
+
+.form-group input:focus {
+    background-color: white;
+    font-size: 18px;
+}
+
+.form-group ::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    color: green;
+}
+
+button {
+    height: 60px;
+}
+
+#btn {
+    font-size: 20px;
+    color: black;
+}
+
+button .btn {
+    font-size: 30px;
+}
+
+#btn:hover {
+    transform: scale('1.0');
+    color: green;
+    background-color: yellow;
+}
+
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+}
+/*----------/form---------*/
+/*----------history---------*/
+
+/*----------/history---------*/
