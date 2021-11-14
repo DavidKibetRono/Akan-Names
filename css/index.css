@@ -1,0 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #62757B; 
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+.jumbotron {
+    margin-top: 50px;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
