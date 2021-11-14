@@ -81,5 +81,13 @@ input[type='radio'] {
 }
 /*----------/form---------*/
 /*----------history---------*/
+.history {
+    /* margin-right: -150px; */
+    background-color: white;
+    height: 430px;
+    margin-top: 60px;
+    width: 40%;
+    font-family: 'Times New Roman', Times, serif;
 
+}
 /*----------/history---------*/
