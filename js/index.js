@@ -56,4 +56,15 @@ function Ghanaian_Culture() {
 
     //Formula
     var Day_of_the_week = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD)) % 7
+
+    //male Names
+    var male_Name = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
+
+    //Female Names
+    var female_Name = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+
+    //Name of Weeks
+    var Name_of_the_week = ['Sunday', 'monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+    var jumbotron_name = document.getElementsByClassName("jumbotron")[0]
 }
