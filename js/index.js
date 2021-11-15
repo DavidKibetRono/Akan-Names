@@ -25,6 +25,24 @@ function Ghanaian_Culture() {
         return false;
 
     }
+    // get gender value
+    var maleGender = document.getElementById("male");
+    var femaleGender = document.getElementById("female");
 
+    var correctMale = " ";
+    var correctFemale = " ";
+
+    if (!(maleGender.checked || femaleGender.checked)) {
+
+        alert("Your gender option is required")
+
+    } else if (maleGender.checked) {
+
+        correctMale = maleGender.value;
+
+    } else if (femaleGender.checked) {
+        correctFemale = femaleGender.value
+
+    }
 
 }
