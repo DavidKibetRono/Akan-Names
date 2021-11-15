@@ -67,4 +67,9 @@ function Ghanaian_Culture() {
     var Name_of_the_week = ['Sunday', 'monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
     var jumbotron_name = document.getElementsByClassName("jumbotron")[0]
+
+    //Looping through Days_of_the_week
+    var day = String(Day_of_the_week).split("").map((Day_of_the_week) => {
+        return Number(Day_of_the_week)
+    })
 }
