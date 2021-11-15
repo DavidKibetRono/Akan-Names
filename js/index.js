@@ -44,5 +44,9 @@ function Ghanaian_Culture() {
         correctFemale = femaleGender.value
 
     }
+    // birth year values
+    var date_birth = document.getElementById("birth_date");
+    var month_birth = document.getElementById("birth_month");
+    var year_birth = document.getElementById("birth_year");
 
 }
