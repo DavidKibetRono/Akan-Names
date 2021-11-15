@@ -49,4 +49,11 @@ function Ghanaian_Culture() {
     var month_birth = document.getElementById("birth_month");
     var year_birth = document.getElementById("birth_year");
 
+    var CC = parseInt(year_birth.value.slice(0, 2));
+    var YY = parseInt(year_birth.value.slice(2, 4));
+    var MM = parseInt(month_birth.value);
+    var DD = parseInt(date_birth.value);
+
+    //Formula
+    var Day_of_the_week = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD)) % 7
 }
