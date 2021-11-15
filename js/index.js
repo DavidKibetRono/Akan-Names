@@ -73,18 +73,18 @@ function Ghanaian_Culture() {
 
     var myjoins = (MM + '/' + DD + '/' + CC + YY);
 
-    var mydates = new Date(myjoins);
+    var mydates = new Date(myjoins).getDay();
 
     //check if male gender is selected
-    if (correctMale) {
-        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + male_Name[mydates.getDay()] + "<br>" + "Born on a " + Name_of_the_week[mydates.getDay()] + "</h1>";
+    if (correctMale === maleGender.value) {
+        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + male_Name[mydates] + "<br>" + "Born on a " + Name_of_the_week[mydates] + "</h1>";
         jumbotron_name.classList.add("feedback")
         return false;
     }
 
     //check if female gender is selected
-    else if (correctFemale) {
-        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + female_Name[mydates.getDay()] + "<br>" + "Born on a " + Name_of_the_week[mydates.getDay()] + "</h1>";
+    else if (correctFemale === femaleGender.value) {
+        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + female_Name[mydates] + "<br>" + "Born on a " + Name_of_the_week[mydates] + "</h1>";
         jumbotron_name.classList.add("feedback")
         return false;
     }
