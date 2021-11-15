@@ -12,7 +12,6 @@ function Ghanaian_Culture() {
         alert("Month field cannot be empty");
         return false;
 
-
     } else if (date_birth.value < 1 || date_birth.value > 31) {
         alert("Provide a valid date of birth value");
         date_birth.value = "";
@@ -34,7 +33,8 @@ function Ghanaian_Culture() {
 
     if (!(maleGender.checked || femaleGender.checked)) {
 
-        alert("Your gender option is required")
+        alert("Your gender option is required");
+        return false;
 
     } else if (maleGender.checked) {
 
@@ -75,10 +75,14 @@ function Ghanaian_Culture() {
 
     //check if male gender is selected
     if (correctMale) {
-        if (male_Name[day] == "") {
-            alert("Check your details")
-        }
         jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + male_Name[day] + "<br>" + "Born on a " + Name_of_the_week[day] + "</h1>";
+        jumbotron_name.classList.add("feedback")
+        return false;
+    }
+
+    //check if female gender is selected
+    else if (correctFemale) {
+        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + female_Name[day] + "<br>" + "Born on a " + Name_of_the_week[day] + "</h1>";
         jumbotron_name.classList.add("feedback")
         return false;
     }
