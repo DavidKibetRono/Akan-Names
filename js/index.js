@@ -3,8 +3,11 @@ function Ghanaian_Culture() {
     //validate date and month range
     var date_birth = document.getElementById("birth_date");
     var month_birth = document.getElementById("birth_month");
-
-    if (date_birth.value.trim() === "") {
+    // validate if all the fields contains values
+    if (date_birth.value.trim() === "" && month_birth.value.trim() === "") {
+        alert("You have not provided any of your details")
+        return false
+    } else if (date_birth.value.trim() === "") {
         alert("Date field cannot be empty");
         return false;
 
