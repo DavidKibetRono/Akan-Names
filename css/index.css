@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/img.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/img.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: 20px;
