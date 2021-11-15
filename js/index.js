@@ -72,4 +72,14 @@ function Ghanaian_Culture() {
     var day = String(Day_of_the_week).split("").map((Day_of_the_week) => {
         return Number(Day_of_the_week)
     })
+
+    //check if male gender is selected
+    if (correctMale) {
+        if (male_Name[day] == "") {
+            alert("Check your details")
+        }
+        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + male_Name[day] + "<br>" + "Born on a " + Name_of_the_week[day] + "</h1>";
+        jumbotron_name.classList.add("feedback")
+        return false;
+    }
 }
