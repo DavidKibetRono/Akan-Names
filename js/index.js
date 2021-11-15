@@ -58,7 +58,7 @@ function Ghanaian_Culture() {
     var DD = parseInt(date_birth.value);
 
     //Formula
-    var Day_of_the_week = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD)) % 7
+    // var Day_of_the_week = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD)) % 7
 
     //male Names
     var male_Name = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
@@ -71,21 +71,20 @@ function Ghanaian_Culture() {
 
     var jumbotron_name = document.getElementsByClassName("jumbotron")[0]
 
-    //Looping through Days_of_the_week
-    var day = String(Day_of_the_week).split("").map((Day_of_the_week) => {
-        return Number(Day_of_the_week)
-    })
+    var myjoins = (MM + '/' + DD + '/' + CC + YY);
+
+    var mydates = new Date(myjoins);
 
     //check if male gender is selected
     if (correctMale) {
-        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + male_Name[day] + "<br>" + "Born on a " + Name_of_the_week[day] + "</h1>";
+        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + male_Name[mydates.getDay()] + "<br>" + "Born on a " + Name_of_the_week[mydates.getDay()] + "</h1>";
         jumbotron_name.classList.add("feedback")
         return false;
     }
 
     //check if female gender is selected
     else if (correctFemale) {
-        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + female_Name[day] + "<br>" + "Born on a " + Name_of_the_week[day] + "</h1>";
+        jumbotron_name.innerHTML = "<h1>" + "Your Akan Name is " + female_Name[mydates.getDay()] + "<br>" + "Born on a " + Name_of_the_week[mydates.getDay()] + "</h1>";
         jumbotron_name.classList.add("feedback")
         return false;
     }
